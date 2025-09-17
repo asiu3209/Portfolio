@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-scroll";
 
 export default function Hero() {
   return (
@@ -30,10 +31,14 @@ export default function Hero() {
         transition={{ delay: 1, duration: 1 }}
       >
         <button className="px-6 py-2 rounded-lg bg-blue-700 text-white font-semibold shadow hover:bg-blue-800 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-400">
-          View Projects
+          <Link to="projects" smooth={true} duration={600}>
+            Projects
+          </Link>
         </button>
         <button className="px-6 py-2 rounded-lg bg-blue-700 text-white font-semibold shadow hover:bg-blue-800 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-300">
-          Contact Me
+          <Link to="contact" smooth={true} duration={600}>
+            Contact Me
+          </Link>
         </button>
       </motion.div>
     </section>
