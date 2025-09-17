@@ -6,7 +6,7 @@ export default function Navbar() {
       <div className="flex-1">
         <h1 className="text-2xl font-bold text-left">Aaron Siu's Portfolio</h1>
       </div>
-      <div className="flex space-x-20">
+      <div className="flex space-x-20 underline">
         <Link
           to="hero"
           smooth={true}
