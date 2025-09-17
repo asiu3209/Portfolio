@@ -17,6 +17,11 @@ export default function Projects() {
       dedicated history tab provides a record of past habits, including their start and end dates.`,
       link: "https://github.com/asiu3209/Habit-Tracker",
     },
+    {
+      name: "Book Log Website",
+      description: "",
+      link: "https://github.com/asiu3209/bookLogWebsite",
+    },
   ];
 
   function handleRedirect(link: string) {
@@ -49,7 +54,7 @@ export default function Projects() {
                 className="px-4 py-2 bg-green-600 text-white rounded-lg shadow hover:bg-green-700 transition"
                 onClick={() => handleRedirect(i.link)}
               >
-                View Project on Github
+                View Project
               </button>
             )}
           </motion.div>
