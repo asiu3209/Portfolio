@@ -21,7 +21,8 @@ export default function Projects() {
       name: "Book Log Website",
       description: `BookLog Website is a simple web app for tracking books you’ve read or want to read. 
       Built with HTML, CSS, and JavaScript, it lets you add, view, 
-      and manage book entries in a clean, responsive interface.`,
+      and manage book entries in a clean, responsive interface. An external API is also implemented within the 
+      application to obtain the book cover of the book inputed.`,
       link: "https://github.com/asiu3209/bookLogWebsite",
       pageLink: "https://asiu3209.github.io/bookLogWebsite",
     },
@@ -50,24 +51,30 @@ export default function Projects() {
             transition={{ duration: 0.6, delay: 1 * 0.2 }}
             className="h-80 bg-gray-900 border border-gray-700 p-6 rounded-2xl flex flex-col justify-between"
           >
-            <h3 className="text-xl font-semibold mb-2">{i.name}</h3>
-            <p className="text-gray-400">{i.description}</p>
-            {i.link && (
-              <button
-                className="px-4 py-2 bg-green-600 text-white rounded-lg shadow hover:bg-green-700 transition"
-                onClick={() => handleRedirect(i.link)}
-              >
-                View Github Repo
-              </button>
-            )}
-            {i.pageLink && (
-              <button
-                className="px-4 py-2 bg-green-600 text-white rounded-lg shadow hover:bg-green-700 transition"
-                onClick={() => handleRedirect(i.pageLink)}
-              >
-                View Project
-              </button>
-            )}
+            <div>
+              <h3 className="text-xl font-semibold mb-2">{i.name}</h3>
+              <p className="text-gray-300 text-sm sm:text-base leading-relaxed">
+                {i.description}
+              </p>
+            </div>
+            <div className="flex gap-4 w-full">
+              {i.link && (
+                <button
+                  className="flex-1 px-4 py-2 bg-green-600 text-white rounded-lg shadow hover:bg-green-700 transition"
+                  onClick={() => handleRedirect(i.link)}
+                >
+                  View Github Repo
+                </button>
+              )}
+              {i.pageLink && (
+                <button
+                  className="flex-1 px-4 py-2 bg-green-600 text-white rounded-lg shadow hover:bg-green-700 transition"
+                  onClick={() => handleRedirect(i.pageLink)}
+                >
+                  View Project
+                </button>
+              )}
+            </div>
           </motion.div>
         ))}
       </div>
