@@ -19,8 +19,11 @@ export default function Projects() {
     },
     {
       name: "Book Log Website",
-      description: "",
+      description: `BookLog Website is a simple web app for tracking books you’ve read or want to read. 
+      Built with HTML, CSS, and JavaScript, it lets you add, view, 
+      and manage book entries in a clean, responsive interface.`,
       link: "https://github.com/asiu3209/bookLogWebsite",
+      pageLink: "https://asiu3209.github.io/bookLogWebsite",
     },
   ];
 
@@ -53,6 +56,14 @@ export default function Projects() {
               <button
                 className="px-4 py-2 bg-green-600 text-white rounded-lg shadow hover:bg-green-700 transition"
                 onClick={() => handleRedirect(i.link)}
+              >
+                View Github Repo
+              </button>
+            )}
+            {i.pageLink && (
+              <button
+                className="px-4 py-2 bg-green-600 text-white rounded-lg shadow hover:bg-green-700 transition"
+                onClick={() => handleRedirect(i.pageLink)}
               >
                 View Project
               </button>
