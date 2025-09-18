@@ -20,7 +20,7 @@ export default function About() {
         I am a Computer Science student finishing my Bachelors and pursuing a
         Masters at Brooklyn College. I am a developer that works with React,
         Typescript, Javascript, and Java. I am constantly learning new things to
-        further advance me knowledge in each programming language, eager to
+        further advance my knowledge in each programming language, eager to
         sharpen my skills as a developer. I love to collaborate on projects,
         solving challenging problems, and being a leader when possible. Right
         now, I'm looking for opportunities where I can grow as a developer and
