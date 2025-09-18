@@ -22,10 +22,10 @@ export default function Contact() {
 
     emailjs
       .send(
-        import.meta.env.VITE_EMAILJS_SERVICE_ID!,
-        import.meta.env.VITE_EMAILJS_TEMPLATE_ID!,
+        "service_oze1r3z",
+        "template_1j6wllg",
         formData,
-        import.meta.env.VITE_EMAILJS_PUBLIC_KEY!
+        "AHdUEDi22jJuTemJM"
       )
       .then(() => {
         setStatus("✅ Message sent successfully!");
