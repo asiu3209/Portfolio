@@ -6,7 +6,7 @@ export default function Navbar() {
       <div className="flex-1">
         <h1 className="text-2xl font-bold text-left">Aaron Siu's Portfolio</h1>
       </div>
-      <div className="flex space-x-20 underline">
+      <div className="flex space-x-12 text-lg">
         <Link
           to="hero"
           smooth={true}
@@ -39,6 +39,13 @@ export default function Navbar() {
         >
           Contact
         </Link>
+        <a
+          href="https://github.com/asiu3209"
+          target="_blank"
+          className="font-bold cursor-pointer hover:text-blue-500"
+        >
+          GitHub
+        </a>
       </div>
     </nav>
   );
