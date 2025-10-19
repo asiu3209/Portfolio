@@ -8,7 +8,7 @@ export default function Projects() {
       help users monitor their spending, stay within budgets, and gain insight through intelligent categorization and analytics. 
       Users can add, edit, and delete expenses, 
       view totals filtered by category, and review their past transactions over time.`,
-      link: "https://github.com/asiu3209/Expense-Tracker",
+      link: "https://github.com/asiu3209/Expense-Tracker-Next",
     },
     {
       name: "Habit Tracker",
@@ -18,13 +18,11 @@ export default function Projects() {
       link: "https://github.com/asiu3209/Habit-Tracker",
     },
     {
-      name: "Book Log Website",
-      description: `BookLog Website is a simple web app for tracking books you’ve read or want to read. 
-      Built with HTML, CSS, and JavaScript, it lets you add, view, 
-      and manage book entries in a clean, responsive interface. An external API is also implemented within the 
-      application to obtain the book cover of the book inputed.`,
-      link: "https://github.com/asiu3209/bookLogWebsite",
-      pageLink: "https://asiu3209.github.io/bookLogWebsite",
+      name: "Smart Trip",
+      description: `SmartTrip is a group project that helps users plan smarter and more efficient trips. It 
+      integrates travel data, personalized recommendations, 
+      and route optimization to make trip planning easier and more enjoyable.`,
+      link: "https://github.com/PinkSheep27/SmartTrip",
     },
   ];
 
@@ -66,14 +64,14 @@ export default function Projects() {
                   View Github Repo
                 </button>
               )}
-              {i.pageLink && (
+              {/* {i.pageLink && (
                 <button
                   className="flex-1 px-4 py-2 bg-green-600 text-white rounded-lg shadow hover:bg-green-700 transition"
                   onClick={() => handleRedirect(i.pageLink)}
                 >
                   View Project
                 </button>
-              )}
+              )} */}
             </div>
           </motion.div>
         ))}
