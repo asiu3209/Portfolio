@@ -23,7 +23,8 @@ export default function Projects() {
       description:
         "Collaborative trip planning tool with travel data integration, personalized recommendations, and route optimization.",
       tech: ["React", "Team Project", "APIs"],
-      link: "https://my-smart-trip.vercel.app",
+      link: "https://github.com/PinkSheep27/SmartTrip",
+      webLink: "https://my-smart-trip.vercel.app",
       gradient: "from-green-500 to-emerald-500",
     },
     {
@@ -88,30 +89,54 @@ export default function Projects() {
                     </span>
                   ))}
                 </div>
-
-                {project.link && (
-                  <a
-                    href={project.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 text-blue-400 hover:text-blue-300 font-semibold group/link"
-                  >
-                    View on GitHub
-                    <svg
-                      className="w-4 h-4 group-hover/link:translate-x-1 transition-transform"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
+                <div className="flex justify-between">
+                  {project.link && (
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 text-blue-400 hover:text-blue-300 font-semibold group/link"
                     >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M17 8l4 4m0 0l-4 4m4-4H3"
-                      />
-                    </svg>
-                  </a>
-                )}
+                      View on GitHub
+                      <svg
+                        className="w-4 h-4 group-hover/link:translate-x-1 transition-transform"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M17 8l4 4m0 0l-4 4m4-4H3"
+                        />
+                      </svg>
+                    </a>
+                  )}
+                  {project.webLink && (
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 text-blue-400 hover:text-blue-300 font-semibold group/link"
+                    >
+                      View Website
+                      <svg
+                        className="w-4 h-4 group-hover/link:translate-x-1 transition-transform"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M17 8l4 4m0 0l-4 4m4-4H3"
+                        />
+                      </svg>
+                    </a>
+                  )}
+                </div>
               </div>
             </motion.div>
           ))}
