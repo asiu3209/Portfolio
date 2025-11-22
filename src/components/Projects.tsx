@@ -23,7 +23,7 @@ export default function Projects() {
       description:
         "Collaborative trip planning tool with travel data integration, personalized recommendations, and route optimization.",
       tech: ["React", "Team Project", "APIs"],
-      link: "https://github.com/PinkSheep27/SmartTrip",
+      link: "https://my-smart-trip.vercel.app",
       gradient: "from-green-500 to-emerald-500",
     },
     {
