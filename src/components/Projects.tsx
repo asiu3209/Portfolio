@@ -115,7 +115,7 @@ export default function Projects() {
                   )}
                   {project.webLink && (
                     <a
-                      href={project.link}
+                      href={project.webLink}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center gap-2 text-blue-400 hover:text-blue-300 font-semibold group/link"
