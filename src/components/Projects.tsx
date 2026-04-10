@@ -33,6 +33,7 @@ export default function Projects() {
         "Volleyball training and analytics tool featuring drills, performance tracking, and responsive UI.",
       tech: ["React", "TypeScript", "UI/UX"],
       gradient: "from-orange-400 to-yellow-500",
+      link: "https://github.com/asiu3209/Volley-Pro",
     },
   ];
 
