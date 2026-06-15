@@ -1,5 +1,6 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useState, useEffect } from "react";
+import { RESUME_URL } from "../constants";
 
 const navItems = [
   { label: "Home", href: "#home" },
@@ -55,6 +56,14 @@ export default function Navbar() {
             </a>
           ))}
           <a
+            href={RESUME_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-secondary text-sm !py-2 !px-4"
+          >
+            Resume
+          </a>
+          <a
             href="https://github.com/asiu3209"
             target="_blank"
             rel="noopener noreferrer"
@@ -99,6 +108,15 @@ export default function Navbar() {
               {item.label}
             </a>
           ))}
+          <a
+            href={RESUME_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block px-6 py-3 text-sm text-orange-400 hover:text-orange-300"
+            onClick={() => setIsOpen(false)}
+          >
+            Resume
+          </a>
           <a
             href="https://github.com/asiu3209"
             target="_blank"
